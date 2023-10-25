@@ -21,10 +21,10 @@ public class HelloServlet extends HttpServlet {
         response.setContentType("application/json");
         ObjectMapper mapper = new ObjectMapper();
         Customer customer= new Customer();
-        customer.setEmail("sun@laioffer.com");
+        customer.setEmail("cxy20000517@gmail.com");
         customer.setPassword("123456");
-        customer.setFirstName("rick");
-        customer.setLastName("sun");
+        customer.setFirstName("Kevin");
+        customer.setLastName("Chen");
         customer.setEnabled(true);
 
         response.getWriter().print(mapper.writeValueAsString(customer));
